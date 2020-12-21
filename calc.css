@@ -3,7 +3,6 @@ body {
 	background-color: #8e44ad; background-size: cover;
 	font-family: Tahoma;
 }
-
 .container {
 	display: flex;
 	align-items: center;
@@ -99,3 +98,24 @@ body {
 	border-left: 2px solid #800000;
 	box-shadow: 0px 0px 2px #030303, inset 0px -20px 1px #B00000;
 }
+.loader{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999999999999999999999;
+}
+
+.disppear{
+  animation: vanish 1s forwards;
+}
+@keyframes vanish {
+  100%{
+    opacity: 0;
+    visibility: hidden;
+  }

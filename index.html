@@ -8,6 +8,9 @@
 </head>
 
 <body>
+	<div class="loader">
+      <img src="load-gif (1).gif" alt="">
+    </div>
 <div class="container">
 <fieldset id="container">
 
@@ -48,5 +51,14 @@
 </form>
 
 </fieldset>
+<script type="text/javascript">
+	var loader = document.querySelector(".loader")
+
+window.addEventListener("load", vanish);
+
+function vanish() {
+  loader.classList.add("disppear");
+}
+</script>
 </body>
 </html>
